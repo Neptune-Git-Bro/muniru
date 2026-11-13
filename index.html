@@ -49,17 +49,17 @@
 <body class="bg-darkBg font-sans antialiased selection:bg-accent selection:text-white">
 
     <!-- Navbar -->
-    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-darkBg/90 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-indigo-500/50 group-hover:border-indigo-400 transition">
+                <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-indigo-500/50 group-hover:border-indigo-400 transition flex-shrink-0">
                     <img src="img2.jpg" alt="Bashiru Muniru" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80'">
                 </div>
-                <span class="text-lg font-extrabold tracking-tight bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                <span class="text-base sm:text-lg font-extrabold tracking-tight bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent truncate max-w-[150px] sm:max-w-none">
                     Bashiru Muniru
                 </span>
             </a>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-300">
                 <a href="#about" class="hover:text-indigo-400 transition">About</a>
                 <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
                 <a href="#services" class="hover:text-indigo-400 transition">Services</a>
@@ -67,8 +67,8 @@
                 <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
                 <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
             </nav>
-            <div class="flex items-center space-x-4">
-                <a href="#contact" class="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg shadow-indigo-500/25 transition">
+            <div>
+                <a href="#contact" class="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold shadow-lg shadow-indigo-500/25 transition">
                     Let's Talk
                 </a>
             </div>
@@ -76,29 +76,29 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 md:pt-44 md:pb-32 px-6 relative overflow-hidden">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <section class="pt-32 pb-16 sm:pt-40 sm:pb-24 px-6 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold tracking-wide uppercase">
                     <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span> Available for Projects & Collaborations
                 </div>
-                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
                     Hi, I'm <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">Bashiru Muniru</span>
                 </h1>
-                <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto lg:mx-0">
+                <p class="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto lg:mx-0">
                     A passionate Frontend Developer building immersive, responsive web applications since 2025. Currently studying at the University of Benin (UNIBEN).
                 </p>
-                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
-                    <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-indigo-600/30 transition flex items-center gap-2">
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg shadow-indigo-600/30 transition flex items-center gap-2 text-sm sm:text-base">
                         View My Work <i class="fa-solid fa-arrow-down text-xs"></i>
                     </a>
-                    <a href="#contact" class="bg-gray-800 hover:bg-gray-700 text-gray-200 font-semibold px-7 py-3.5 rounded-xl border border-gray-700 transition">
+                    <a href="#contact" class="bg-gray-800 hover:bg-gray-700 text-gray-200 font-semibold px-6 py-3.5 rounded-xl border border-gray-700 transition text-sm sm:text-base">
                         Get In Touch
                     </a>
                 </div>
                 <!-- Social links -->
-                <div class="flex items-center justify-center lg:justify-start gap-5 pt-6 text-gray-400">
+                <div class="flex items-center justify-center lg:justify-start gap-5 pt-4 text-gray-400">
                     <a href="https://t.me/Neptune114" target="_blank" class="w-10 h-10 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500/50 transition">
                         <i class="fa-brands fa-telegram text-lg"></i>
                     </a>
@@ -110,9 +110,9 @@
                     </a>
                 </div>
             </div>
-            <!-- Hero Images -->
+            <!-- Hero Image -->
             <div class="lg:col-span-5 flex justify-center">
-                <div class="relative w-72 h-96 md:w-80 md:h-[420px]">
+                <div class="relative w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[420px]">
                     <div class="absolute inset-0 bg-gradient-to-tr from-indigo-600 to-cyan-500 rounded-3xl transform rotate-3 scale-105 opacity-30 blur-lg"></div>
                     <div class="relative w-full h-full rounded-3xl overflow-hidden border-2 border-gray-800 bg-cardBg glow-effect">
                         <img src="img2.jpg" alt="Bashiru Muniru" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'">
@@ -123,26 +123,26 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-24 bg-gray-950/50 border-t border-b border-gray-900">
-        <div class="max-w-7xl mx-auto px-6">
+    <section id="about" class="py-20 sm:py-24 bg-gray-950/50 border-t border-b border-gray-900 px-6">
+        <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-5">
-                    <div class="relative rounded-3xl overflow-hidden border border-gray-800 h-96">
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-sm h-80 sm:h-96 rounded-3xl overflow-hidden border border-gray-800">
                         <img src="img3.jpg" alt="Bashiru Muniru portrait" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'">
                     </div>
                 </div>
-                <div class="lg:col-span-7 space-y-6">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">About Me</h2>
-                    <h3 class="text-3xl md:text-4xl font-extrabold tracking-tight">Dedicated Frontend Developer & UNIBEN Student</h3>
-                    <p class="text-gray-400 leading-relaxed">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Dedicated Frontend Developer & UNIBEN Student</h3>
+                    <p class="text-gray-400 leading-relaxed text-base sm:text-lg">
                         I am Bashiru Muniru, studying at the University of Benin (UNIBEN). Alongside my studies, I have built a strong career in frontend web development since 2025, specializing in crafting high-performance, responsive websites and dynamic user interfaces.
                     </p>
                     <div class="grid grid-cols-2 gap-4 pt-2">
-                        <div class="p-4 rounded-2xl bg-cardBg border border-gray-800">
+                        <div class="p-4 rounded-2xl bg-cardBg border border-gray-800 text-center lg:text-left">
                             <h4 class="text-2xl font-bold text-indigo-400">2025+</h4>
                             <p class="text-sm text-gray-400 mt-1">Frontend Experience</p>
                         </div>
-                        <div class="p-4 rounded-2xl bg-cardBg border border-gray-800">
+                        <div class="p-4 rounded-2xl bg-cardBg border border-gray-800 text-center lg:text-left">
                             <h4 class="text-2xl font-bold text-cyan-400">UNIBEN</h4>
                             <p class="text-sm text-gray-400 mt-1">Student</p>
                         </div>
@@ -153,15 +153,15 @@
     </section>
 
     <!-- Skills & Tech Stack Section -->
-    <section id="skills" class="py-24 px-6">
+    <section id="skills" class="py-20 sm:py-24 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Expertise</h2>
-                <h3 class="text-3xl md:text-5xl font-extrabold tracking-tight">Skills & Tech Stack</h3>
+                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Skills & Tech Stack</h3>
                 <p class="text-gray-400">The tools and technologies I use to turn design concepts into live web applications.</p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="bg-cardBg border border-gray-800 p-6 rounded-2xl text-center space-y-3 card-hover">
                     <i class="fa-brands fa-html5 text-4xl text-orange-500"></i>
                     <h4 class="font-bold text-white">HTML5</h4>
@@ -187,13 +187,210 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-24 bg-gray-950/50 border-t border-b border-gray-900 px-6">
+    <section id="services" class="py-20 sm:py-24 bg-gray-950/50 border-t border-b border-gray-900 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">What I Do</h2>
-                <h3 class="text-3xl md:text-5xl font-extrabold tracking-tight">Services Offered</h3>
+                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Services Offered</h3>
                 <p class="text-gray-400">Specialized digital solutions tailored for your business, brand, or community.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-cardBg border border-gray-800 p-8 rounded-3xl space-y-4 card-hover">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl">
+                        <i class="fa-solid fa-laptop-code text-indigo-400"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white">Frontend Development</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Building fast, clean, and interactive user interfaces from scratch using HTML, CSS, and modern JavaScript.</p>
+                </div>
+
+                <div class="bg-cardBg border border-gray-800 p-8 rounded-3xl space-y-4 card-hover">
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
+                        <i class="fa-solid fa-mobile-screen text-cyan-400"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white">Responsive Web Design</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Ensuring your website looks stunning and functions seamlessly across all mobile phones, tablets, and desktop screens.</p>
+                </div>
+
+                <div class="bg-cardBg border border-gray-800 p-8 rounded-3xl space-y-4 card-hover">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl">
+                        <i class="fa-solid fa-rocket text-purple-400"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white">Deployment & CI/CD</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Setting up clean GitHub repositories and deploying lightning-fast sites instantly via Netlify hosting pipelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub & Netlify Workflow Section -->
+    <section id="workflow" class="py-20 sm:py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Development Workflow</h2>
+                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">How I Build & Deploy</h3>
+                <p class="text-gray-400">Leveraging modern version control and blazing-fast cloud deployment pipelines.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- GitHub Card -->
+                <div class="bg-cardBg border border-gray-800 rounded-3xl p-8 space-y-4 card-hover">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white">Version Control with GitHub</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        I manage all source code repositories under my GitHub account (<span class="text-indigo-400 font-medium">Neptune-Git-Bro</span>), ensuring structured commits, clean branch management, and reliable source archiving for every live project.
+                    </p>
+                </div>
+
+                <!-- Netlify Card -->
+                <div class="bg-cardBg border border-gray-800 rounded-3xl p-8 space-y-4 card-hover">
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-600/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white">Continuous Deployment on Netlify</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        For lightning-fast delivery, secure SSL certificates, and global edge hosting, my projects integrate directly with Netlify for instant CI/CD deployments straight from my repositories.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 sm:py-28 bg-gray-950/50 border-t border-gray-900 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Portfolio</h2>
+                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Featured Projects</h3>
+                <p class="text-gray-400">Explore some of the live web applications and platforms I've designed and developed.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold">Web App</span>
+                            <i class="fa-solid fa-code text-indigo-400 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Happies Hub</h4>
+                        <p class="text-gray-400 text-sm mb-6">A fully responsive web platform built with modern HTML, CSS, and interactive JavaScript features.</p>
+                    </div>
+                    <a href="https://happies-hub.netlify.app/" target="_blank" class="inline-flex items-center gap-2 text-indigo-400 font-semibold text-sm hover:text-indigo-300 transition">
+                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold">Platform</span>
+                            <i class="fa-solid fa-chart-line text-cyan-400 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">The Greater Bull</h4>
+                        <p class="text-gray-400 text-sm mb-6">High-impact web project tailored for digital brand presentation and community engagement.</p>
+                    </div>
+                    <a href="https://thegreaterbull.com/" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 font-semibold text-sm hover:text-cyan-300 transition">
+                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold">E-Commerce</span>
+                            <i class="fa-solid fa-bag-shopping text-purple-400 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Ethereals Collection</h4>
+                        <p class="text-gray-400 text-sm mb-6">A sleek e-commerce website showcasing unisex apparel, footwear, bags, and lifestyle essentials.</p>
+                    </div>
+                    <a href="https://ethereals-collection.netlify.app/" target="_blank" class="inline-flex items-center gap-2 text-purple-400 font-semibold text-sm hover:text-purple-300 transition">
+                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold">Community</span>
+                            <i class="fa-solid fa-users text-emerald-400 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Chill Army Culture</h4>
+                        <p class="text-gray-400 text-sm mb-6">An engaging community hub web page deployed via GitHub Pages showcasing vibrant culture.</p>
+                    </div>
+                    <a href="https://neptune-git-bro.github.io/Chill-Army-Culture/" target="_blank" class="inline-flex items-center gap-2 text-emerald-400 font-semibold text-sm hover:text-emerald-300 transition">
+                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 sm:py-28 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Get In Touch</h2>
+                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Let's Build Something Together</h3>
+                <p class="text-gray-400">Have a project in mind or want to collaborate? Send me a message below!</p>
+            </div>
+
+            <div class="bg-cardBg border border-gray-800 rounded-3xl p-6 sm:p-12 shadow-2xl">
+                <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Your Name</label>
+                            <input type="text" id="senderName" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Your Email</label>
+                            <input type="email" id="senderEmail" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Message</label>
+                        <textarea id="senderMessage" rows="5" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition"></textarea>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                        <p class="text-xs text-gray-500">Email: rulemoni8@gmail.com</p>
+                        <button type="submit" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-indigo-600/30 transition flex items-center justify-center gap-2">
+                            Send Message <i class="fa-solid fa-paper-plane text-xs"></i>
+                        </button>
+                    </div>
+                </form>
+                <div id="formSuccess" class="hidden mt-6 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm text-center">
+                    Message sent successfully! I will get back to you soon.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-900 text-center text-gray-500 text-sm px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <p>© 2026 Bashiru Muniru. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="https://t.me/Neptune114" target="_blank" class="hover:text-indigo-400 transition"><i class="fa-brands fa-telegram text-lg"></i></a>
+                <a href="https://wa.me/2347050304562" target="_blank" class="hover:text-emerald-400 transition"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                <a href="mailto:rulemoni8@gmail.com" class="hover:text-indigo-400 transition"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Submission -->
+    <script>
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('contactForm').reset();
+            const successDiv = document.getElementById('formSuccess');
+            successDiv.classList.remove('hidden');
+            setTimeout(() => successDiv.classList.add('hidden'), 5000);
+        }
+    </script>
+</body>
+</html>
