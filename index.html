@@ -51,11 +51,11 @@
     <!-- Navbar -->
     <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-darkBg/90 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-2 sm:gap-3 group">
+            <a href="#" class="flex items-center gap-2.5 sm:gap-3 group">
                 <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-indigo-500/50 group-hover:border-indigo-400 transition flex-shrink-0">
                     <img src="img2.jpg" alt="Bashiru Muniru" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80'">
                 </div>
-                <span class="text-xs sm:text-base md:text-lg font-extrabold tracking-tight bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                <span class="text-sm sm:text-base md:text-lg font-extrabold tracking-tight bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
                     Bashiru Muniru
                 </span>
             </a>
@@ -68,7 +68,7 @@
                 <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
             </nav>
             <div>
-                <a href="#contact" class="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white px-3.5 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-lg shadow-indigo-500/25 transition">
+                <a href="#contact" class="hidden sm:inline-block bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-lg shadow-indigo-500/25 transition">
                     Let's Talk
                 </a>
             </div>
@@ -262,3 +262,108 @@
     <section id="projects" class="py-20 sm:py-28 bg-gray-950/50 border-t border-gray-900 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Portfolio</h2>
+                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Featured Projects</h3>
+                <p class="text-gray-400">Explore some of the live web applications and platforms I've designed and developed.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold">Web App</span>
+                            <i class="fa-solid fa-code text-indigo-400 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Happies Hub</h4>
+                        <p class="text-gray-400 text-sm mb-6">A fully responsive web platform built with modern HTML, CSS, and interactive JavaScript features.</p>
+                    </div>
+                    <a href="https://happies-hub.netlify.app/" target="_blank" class="inline-flex items-center gap-2 text-indigo-400 font-semibold text-sm hover:text-indigo-300 transition">
+                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold">Platform</span>
+                            <i class="fa-solid fa-chart-line text-cyan-400 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">The Greater Bull</h4>
+                        <p class="text-gray-400 text-sm mb-6">High-impact web project tailored for digital brand presentation and community engagement.</p>
+                    </div>
+                    <a href="https://thegreaterbull.com/" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 font-semibold text-sm hover:text-cyan-300 transition">
+                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold">E-Commerce</span>
+                            <i class="fa-solid fa-bag-shopping text-purple-400 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Ethereals Collection</h4>
+                        <p class="text-gray-400 text-sm mb-6">A sleek e-commerce website showcasing unisex apparel, footwear, bags, and lifestyle essentials.</p>
+                    </div>
+                    <a href="https://ethereals-collection.netlify.app/" target="_blank" class="inline-flex items-center gap-2 text-purple-400 font-semibold text-sm hover:text-purple-300 transition">
+                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold">Community</span>
+                            <i class="fa-solid fa-users text-emerald-400 text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Chill Army Culture</h4>
+                        <p class="text-gray-400 text-sm mb-6">An engaging community hub web page deployed via GitHub Pages showcasing vibrant culture.</p>
+                    </div>
+                    <a href="https://neptune-git-bro.github.io/Chill-Army-Culture/" target="_blank" class="inline-flex items-center gap-2 text-emerald-400 font-semibold text-sm hover:text-emerald-300 transition">
+                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 sm:py-28 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Get In Touch</h2>
+                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Let's Build Something Together</h3>
+                <p class="text-gray-400">Have a project in mind or want to collaborate? Send me a message below!</p>
+            </div>
+
+            <div class="bg-cardBg border border-gray-800 rounded-3xl p-6 sm:p-12 shadow-2xl">
+                <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Your Name</label>
+                            <input type="text" id="senderName" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Your Email</label>
+                            <input type="email" id="senderEmail" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Message</label>
+                        <textarea id="senderMessage" rows="5" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition"></textarea>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                        <p class="text-xs text-gray-500">Email: rulemoni8@gmail.com</p>
+                        <button type="submit" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-indigo-600/30 transition flex items-center justify-center gap-2">
+                            Send Message <i class="fa-solid fa-paper-plane text-xs"></i>
+                        </button>
+                    </div>
+                </form>
+                <div id="formSuccess" class="hidden mt-6 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm text-center">
+                    Message sent successfully! I will get back to you soon.
+                </div>
+            </div>
