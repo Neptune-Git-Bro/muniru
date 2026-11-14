@@ -49,8 +49,8 @@
 <body class="bg-darkBg font-sans antialiased selection:bg-accent selection:text-white">
 
     <!-- Navbar -->
-    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-darkBg/90 border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-darkBg/95 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between relative">
             <a href="#" class="flex items-center gap-2.5 sm:gap-3 group">
                 <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-indigo-500/50 group-hover:border-indigo-400 transition flex-shrink-0">
                     <img src="img2.jpg" alt="Bashiru Muniru" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80'">
@@ -59,6 +59,7 @@
                     Bashiru Muniru
                 </span>
             </a>
+            
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-300">
                 <a href="#about" class="hover:text-indigo-400 transition">About</a>
@@ -68,27 +69,28 @@
                 <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
                 <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
             </nav>
+
             <div class="flex items-center gap-3">
                 <a href="#contact" class="hidden sm:inline-block bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-lg shadow-indigo-500/25 transition">
                     Let's Talk
                 </a>
                 <!-- Mobile Menu Button -->
-                <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 rounded-xl bg-gray-800 text-indigo-400 border border-gray-700 flex items-center justify-center transition">
+                <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 rounded-xl bg-gray-800 text-indigo-400 border border-gray-700 flex items-center justify-center transition focus:outline-none">
                     <i id="menuIcon" class="fa-solid fa-bars text-lg"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-cardBg border-b border-gray-800 px-6 py-5 space-y-4 shadow-2xl">
-            <a href="#about" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">About</a>
-            <a href="#skills" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">Skills</a>
-            <a href="#services" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">Services</a>
-            <a href="#workflow" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">Workflow</a>
-            <a href="#projects" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">Projects</a>
-            <a href="#contact" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">Contact</a>
+        <!-- Mobile Dropdown Menu (Absolute Overlay) -->
+        <div id="mobileMenu" class="hidden absolute top-full left-0 right-0 bg-[#0d1322] border-b border-gray-800 px-6 py-6 space-y-4 shadow-2xl md:hidden">
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-gray-200 hover:text-indigo-400 font-semibold text-base py-1 transition border-b border-gray-800/50 pb-3">About</a>
+            <a href="#skills" onclick="toggleMobileMenu()" class="block text-gray-200 hover:text-indigo-400 font-semibold text-base py-1 transition border-b border-gray-800/50 pb-3">Skills</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block text-gray-200 hover:text-indigo-400 font-semibold text-base py-1 transition border-b border-gray-800/50 pb-3">Services</a>
+            <a href="#workflow" onclick="toggleMobileMenu()" class="block text-gray-200 hover:text-indigo-400 font-semibold text-base py-1 transition border-b border-gray-800/50 pb-3">Workflow</a>
+            <a href="#projects" onclick="toggleMobileMenu()" class="block text-gray-200 hover:text-indigo-400 font-semibold text-base py-1 transition border-b border-gray-800/50 pb-3">Projects</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-gray-200 hover:text-indigo-400 font-semibold text-base py-1 transition pb-2">Contact</a>
             <div class="pt-2">
-                <a href="#contact" onclick="toggleMobileMenu()" class="block text-center bg-indigo-600 text-white py-2.5 rounded-xl font-semibold">Let's Talk</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="block text-center bg-gradient-to-r from-indigo-600 to-violet-600 text-white py-3 rounded-xl font-bold shadow-lg shadow-indigo-600/30">Let's Talk</a>
             </div>
         </div>
     </header>
@@ -158,70 +160,4 @@
                     <div class="grid grid-cols-2 gap-4 pt-2">
                         <div class="p-4 rounded-2xl bg-cardBg border border-gray-800 text-center lg:text-left">
                             <h4 class="text-2xl font-bold text-indigo-400">2025+</h4>
-                            <p class="text-sm text-gray-400 mt-1">Frontend Experience</p>
-                        </div>
-                        <div class="p-4 rounded-2xl bg-cardBg border border-gray-800 text-center lg:text-left">
-                            <h4 class="text-2xl font-bold text-cyan-400">UNIBEN</h4>
-                            <p class="text-sm text-gray-400 mt-1">Student</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills & Tech Stack Section -->
-    <section id="skills" class="py-20 sm:py-24 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Expertise</h2>
-                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Skills & Tech Stack</h3>
-                <p class="text-gray-400">The tools and technologies I use to turn design concepts into live web applications.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="bg-cardBg border border-gray-800 p-6 rounded-2xl text-center space-y-3 card-hover">
-                    <i class="fa-brands fa-html5 text-4xl text-orange-500"></i>
-                    <h4 class="font-bold text-white">HTML5</h4>
-                    <p class="text-xs text-gray-400">Semantic & Accessible Markup</p>
-                </div>
-                <div class="bg-cardBg border border-gray-800 p-6 rounded-2xl text-center space-y-3 card-hover">
-                    <i class="fa-brands fa-css3-alt text-4xl text-blue-500"></i>
-                    <h4 class="font-bold text-white">CSS3 / Tailwind</h4>
-                    <p class="text-xs text-gray-400">Modern Styling & Responsive Design</p>
-                </div>
-                <div class="bg-cardBg border border-gray-800 p-6 rounded-2xl text-center space-y-3 card-hover">
-                    <i class="fa-brands fa-js text-4xl text-yellow-400"></i>
-                    <h4 class="font-bold text-white">JavaScript</h4>
-                    <p class="text-xs text-gray-400">Interactive DOM & Web Logic</p>
-                </div>
-                <div class="bg-cardBg border border-gray-800 p-6 rounded-2xl text-center space-y-3 card-hover">
-                    <i class="fa-brands fa-git-alt text-4xl text-red-500"></i>
-                    <h4 class="font-bold text-white">Git & GitHub</h4>
-                    <p class="text-xs text-gray-400">Version Control & Collaboration</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 sm:py-24 bg-gray-950/50 border-t border-b border-gray-900 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">What I Do</h2>
-                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Services Offered</h3>
-                <p class="text-gray-400">Specialized digital solutions tailored for your business, brand, or community.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-cardBg border border-gray-800 p-8 rounded-3xl space-y-4 card-hover">
-                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl">
-                        <i class="fa-solid fa-laptop-code text-indigo-400"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white">Frontend Development</h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">Building fast, clean, and interactive user interfaces from scratch using HTML, CSS, and modern JavaScript.</p>
-                </div>
-
-                <div class="bg-cardBg border border-gray-800 p-8 rounded-3xl space-y-4 card-hover">
-                    <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
-                        <i class="fa-solid fa-mobile-screen text-cyan-
+                            <p class="text-sm text-gray
