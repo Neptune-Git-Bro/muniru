@@ -59,6 +59,7 @@
                     Bashiru Muniru
                 </span>
             </a>
+            <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-300">
                 <a href="#about" class="hover:text-indigo-400 transition">About</a>
                 <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
@@ -67,10 +68,27 @@
                 <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
                 <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
             </nav>
-            <div>
+            <div class="flex items-center gap-3">
                 <a href="#contact" class="hidden sm:inline-block bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-lg shadow-indigo-500/25 transition">
                     Let's Talk
                 </a>
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 rounded-xl bg-gray-800 text-indigo-400 border border-gray-700 flex items-center justify-center transition">
+                    <i id="menuIcon" class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-cardBg border-b border-gray-800 px-6 py-5 space-y-4 shadow-2xl">
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">About</a>
+            <a href="#skills" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">Skills</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">Services</a>
+            <a href="#workflow" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">Workflow</a>
+            <a href="#projects" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">Projects</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-indigo-400 font-medium transition">Contact</a>
+            <div class="pt-2">
+                <a href="#contact" onclick="toggleMobileMenu()" class="block text-center bg-indigo-600 text-white py-2.5 rounded-xl font-semibold">Let's Talk</a>
             </div>
         </div>
     </header>
@@ -206,164 +224,4 @@
 
                 <div class="bg-cardBg border border-gray-800 p-8 rounded-3xl space-y-4 card-hover">
                     <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
-                        <i class="fa-solid fa-mobile-screen text-cyan-400"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white">Responsive Web Design</h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">Ensuring your website looks stunning and functions seamlessly across all mobile phones, tablets, and desktop screens.</p>
-                </div>
-
-                <div class="bg-cardBg border border-gray-800 p-8 rounded-3xl space-y-4 card-hover">
-                    <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl">
-                        <i class="fa-solid fa-rocket text-purple-400"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white">Deployment & CI/CD</h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">Setting up clean GitHub repositories and deploying lightning-fast sites instantly via Netlify hosting pipelines.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GitHub & Netlify Workflow Section -->
-    <section id="workflow" class="py-20 sm:py-24 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Development Workflow</h2>
-                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">How I Build & Deploy</h3>
-                <p class="text-gray-400">Leveraging modern version control and blazing-fast cloud deployment pipelines.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- GitHub Card -->
-                <div class="bg-cardBg border border-gray-800 rounded-3xl p-8 space-y-4 card-hover">
-                    <div class="w-12 h-12 rounded-2xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white">Version Control with GitHub</h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        I manage all source code repositories under my GitHub account (<span class="text-indigo-400 font-medium">Neptune-Git-Bro</span>), ensuring structured commits, clean branch management, and reliable source archiving for every live project.
-                    </p>
-                </div>
-
-                <!-- Netlify Card -->
-                <div class="bg-cardBg border border-gray-800 rounded-3xl p-8 space-y-4 card-hover">
-                    <div class="w-12 h-12 rounded-2xl bg-cyan-600/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white">Continuous Deployment on Netlify</h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        For lightning-fast delivery, secure SSL certificates, and global edge hosting, my projects integrate directly with Netlify for instant CI/CD deployments straight from my repositories.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 sm:py-28 bg-gray-950/50 border-t border-gray-900 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Portfolio</h2>
-                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Featured Projects</h3>
-                <p class="text-gray-400">Explore some of the live web applications and platforms I've designed and developed.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
-                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold">Web App</span>
-                            <i class="fa-solid fa-code text-indigo-400 text-xl"></i>
-                        </div>
-                        <h4 class="text-xl font-bold text-white mb-2">Happies Hub</h4>
-                        <p class="text-gray-400 text-sm mb-6">A fully responsive web platform built with modern HTML, CSS, and interactive JavaScript features.</p>
-                    </div>
-                    <a href="https://happies-hub.netlify.app/" target="_blank" class="inline-flex items-center gap-2 text-indigo-400 font-semibold text-sm hover:text-indigo-300 transition">
-                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                    </a>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold">Platform</span>
-                            <i class="fa-solid fa-chart-line text-cyan-400 text-xl"></i>
-                        </div>
-                        <h4 class="text-xl font-bold text-white mb-2">The Greater Bull</h4>
-                        <p class="text-gray-400 text-sm mb-6">High-impact web project tailored for digital brand presentation and community engagement.</p>
-                    </div>
-                    <a href="https://thegreaterbull.com/" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 font-semibold text-sm hover:text-cyan-300 transition">
-                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                    </a>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold">E-Commerce</span>
-                            <i class="fa-solid fa-bag-shopping text-purple-400 text-xl"></i>
-                        </div>
-                        <h4 class="text-xl font-bold text-white mb-2">Ethereals Collection</h4>
-                        <p class="text-gray-400 text-sm mb-6">A sleek e-commerce website showcasing unisex apparel, footwear, bags, and lifestyle essentials.</p>
-                    </div>
-                    <a href="https://ethereals-collection.netlify.app/" target="_blank" class="inline-flex items-center gap-2 text-purple-400 font-semibold text-sm hover:text-purple-300 transition">
-                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                    </a>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="card-hover bg-cardBg rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold">Community</span>
-                            <i class="fa-solid fa-users text-emerald-400 text-xl"></i>
-                        </div>
-                        <h4 class="text-xl font-bold text-white mb-2">Chill Army Culture</h4>
-                        <p class="text-gray-400 text-sm mb-6">An engaging community hub web page deployed via GitHub Pages showcasing vibrant culture.</p>
-                    </div>
-                    <a href="https://neptune-git-bro.github.io/Chill-Army-Culture/" target="_blank" class="inline-flex items-center gap-2 text-emerald-400 font-semibold text-sm hover:text-emerald-300 transition">
-                        Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 sm:py-28 px-6">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16 space-y-4">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Get In Touch</h2>
-                <h3 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Let's Build Something Together</h3>
-                <p class="text-gray-400">Have a project in mind or want to collaborate? Send me a message below!</p>
-            </div>
-
-            <div class="bg-cardBg border border-gray-800 rounded-3xl p-6 sm:p-12 shadow-2xl">
-                <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Your Name</label>
-                            <input type="text" id="senderName" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Your Email</label>
-                            <input type="email" id="senderEmail" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Message</label>
-                        <textarea id="senderMessage" rows="5" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition"></textarea>
-                    </div>
-                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-                        <p class="text-xs text-gray-500">Email: rulemoni8@gmail.com</p>
-                        <button type="submit" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-indigo-600/30 transition flex items-center justify-center gap-2">
-                            Send Message <i class="fa-solid fa-paper-plane text-xs"></i>
-                        </button>
-                    </div>
-                </form>
-                <div id="formSuccess" class="hidden mt-6 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm text-center">
-                    Message sent successfully! I will get back to you soon.
-                </div>
-            </div>
+                        <i class="fa-solid fa-mobile-screen text-cyan-
